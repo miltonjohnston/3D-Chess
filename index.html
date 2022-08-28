@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="src/GameManager.js" type="module"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="canvas-container"></div>
+        <div class="game-ui">
+            <div class="promotion-options" style="display: none;">
+                <div class="promotion-option" id="knight">Knight</div>
+                <div class="promotion-option" id="bishop">Bishop</div>
+                <div class="promotion-option" id="rook">Rook</div>
+                <div class="promotion-option" id="queen">Queen</div>
+            </div>
+            <h1 class="check-warning" style="display: none">Check!</h1>
+            <div class="end-screen">
+                <h1 id="end-screen-title"></h1>
+                <div class="button back-to-room-button">Back to Room</div>
+            </div>
+        </div>
+        <div id="background"></div>
+        <div id="home-page" style="display: flex">
+            <h1 class="title">CHESS 3D</h1>
+            <input type="text" id="username" placeholder="Enter your username" autocomplete="off">
+            <div class="button" id="look-for-rooms">Look For Rooms</div>
+        </div>
+        <div class="look-for-rooms-container">
+            <div class="sub-container">
+                <div class="rooms-list"></div>
+                <div class="button" id="create-room-button">Create</div>
+            </div>
+        </div>
+        <div class="waiting-room-container">
+            <div class="sub-container">
+                <div class="room-options">
+                    <h2 class="room-name">Room 6</h2>
+                    <h3>Players:</h3>
+                    <div class="players"></div>
+                    <div id="player-count">Players: 1 / 2</div>
+                </div>
+                <div class="button" id="start-game-button">Start Game</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
